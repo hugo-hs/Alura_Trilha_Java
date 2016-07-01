@@ -1,4 +1,5 @@
 package br.com.alura.dominandoCollections;
+
 public class TestaCurso {
 
 	public static void main(String[] args) {

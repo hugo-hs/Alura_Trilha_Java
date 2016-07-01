@@ -1,6 +1,6 @@
 package br.com.alura.designPatterns.strategy.imposto;
 
-import br.com.alura.designerPatterns.state.Orcamento;
+import br.com.alura.designPatterns.state.Orcamento;
 
 public abstract class Imposto {
 

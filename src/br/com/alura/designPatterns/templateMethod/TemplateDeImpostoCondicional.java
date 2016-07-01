@@ -1,7 +1,7 @@
 package br.com.alura.designPatterns.templateMethod;
 
+import br.com.alura.designPatterns.state.Orcamento;
 import br.com.alura.designPatterns.strategy.imposto.Imposto;
-import br.com.alura.designerPatterns.state.Orcamento;
 
 public abstract class TemplateDeImpostoCondicional extends Imposto{
 

@@ -1,7 +1,7 @@
 package br.com.alura.designPatterns.templateMethod;
 
 import br.com.alura.designPatterns.chainOfResponsibility.desconto.Item;
-import br.com.alura.designerPatterns.state.Orcamento;
+import br.com.alura.designPatterns.state.Orcamento;
 
 public class IKCV extends TemplateDeImpostoCondicional {
 

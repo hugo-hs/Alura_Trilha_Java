@@ -1,6 +1,6 @@
 package br.com.alura.designPatterns.chainOfResponsibility.desconto;
 
-import br.com.alura.designerPatterns.state.Orcamento;
+import br.com.alura.designPatterns.state.Orcamento;
 
 public class DescontoPorValorMaiorQueQuinhentos implements Desconto{
 

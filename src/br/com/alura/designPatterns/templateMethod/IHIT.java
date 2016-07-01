@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.com.alura.designPatterns.chainOfResponsibility.desconto.Item;
-import br.com.alura.designerPatterns.state.Orcamento;
+import br.com.alura.designPatterns.state.Orcamento;
 
 public class IHIT extends TemplateDeImpostoCondicional{
 
