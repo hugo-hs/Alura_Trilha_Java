@@ -1,5 +1,7 @@
 package br.com.alura.designPatternsII.interpreter;
 
+import br.com.alura.designPatternsII.visitor.Visitor;
+
 public class Subtracao implements Expressao{
 
 	private Expressao esquerda;
@@ -17,5 +19,18 @@ public class Subtracao implements Expressao{
 		int direita = this.direita.avalia();
 		
 		return esquerda - direita;
+	}
+
+	@Override
+	public void aceita(Visitor visitor) {
+		visitor.visitaSubtracao(this);
+	}
+
+	public Expressao getEsquerda() {
+		return esquerda;
+	}
+
+	public Expressao getDireita() {
+		return direita;
 	}
 }

@@ -1,5 +1,7 @@
 package br.com.alura.designPatternsII.interpreter;
 
+import br.com.alura.designPatternsII.visitor.Visitor;
+
 public class Numero implements Expressao {
 
 	private int numero;
@@ -10,6 +12,15 @@ public class Numero implements Expressao {
 
 	@Override
 	public int avalia() {
+		return numero;
+	}
+
+	@Override
+	public void aceita(Visitor visitor) {
+		visitor.visitaNumero(this);
+	}
+
+	public int getNumero() {
 		return numero;
 	}
 }

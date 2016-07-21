@@ -1,5 +1,7 @@
 package br.com.alura.designPatternsII.interpreter;
 
+import br.com.alura.designPatternsII.visitor.Visitor;
+
 public class Divisao implements Expressao{
 	
 	private Expressao esquerda;
@@ -17,6 +19,19 @@ public class Divisao implements Expressao{
 		int direita = this.direita.avalia();
 		
 		return esquerda / direita;
+	}
+
+	@Override
+	public void aceita(Visitor visitor) {
+		visitor.visitaDivisao(this);
+	}
+
+	public Expressao getEsquerda() {
+		return esquerda;
+	}
+
+	public Expressao getDireita() {
+		return direita;
 	}
 
 }
